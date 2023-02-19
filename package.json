@@ -1,0 +1,11 @@
+{
+  "name": "zyb0t-docker",
+  "version": "1.0.0",
+  "description": "Docker setup for zyb0t & gunbot",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker build --pull --rm -f 'Dockerfile' -t zyb0tdocker:latest '.'"
+  },
+  "author": "zy0n.bear",
+  "license": "MIT"
+}
