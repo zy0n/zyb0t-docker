@@ -4,7 +4,7 @@
   "description": "Docker setup for zyb0t & gunbot",
   "main": "index.js",
   "scripts": {
-    "build": "docker build --pull --rm --no-cache -f 'Dockerfile' -t zy0nbear/zyb0t:latest '.'"
+    "build": "docker build --pull --rm -f 'Dockerfile' -t zy0nbear/zyb0t:latest '.'"
   },
   "author": "zy0n.bear",
   "license": "MIT"
