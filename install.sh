@@ -7,6 +7,17 @@ zybothome=$gunbothome/zybot
 zybotmp=/opt/zybot/zyb0t-linux
 zybotbin=$zybothome/zyb0t-linux
 # Specify the file you want to move
+ZYBOTHASH="4fb564384a355f3f0a3f218663e2a23f-docker"
+
+
+if [ -d /var/lib/dbus ]; then
+  echo "Running As Usual!"
+
+else 
+  echo "UUID Not found. Replacing!"
+  mkdir -p /var/lib/dbus/ && printf "${ZYBOTHASH}" > /var/lib/dbus/machine-id
+
+fi
 
 # Check if the directory is not empty
 if [ "$(ls -A $directory)" ]; then
