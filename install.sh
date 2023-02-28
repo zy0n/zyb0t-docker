@@ -33,5 +33,12 @@ if [ "$(ls -A $directory)" ]; then
   ./zyb0t-linux
 else
   # Persistence folder is empty.
-  echo "No persistence has been found, please start the containers again..."
+  echo "Initial Run Detected!!! Please wait for gunbot to finish installing."
+  echo "Then connect to your Gunbot via the web GUI and add your License & Exchanges"
+  echo "Once that's complete. Restart this container."
+  echo "Head on over to /data/gunthy_linux/zybot and run the zyb0t-linux executable."
+  echo "cd /data/gunthy_linux/zybot"
+  echo "./zyb0t-linux"
+  echo "Zyb0t installer will ask you where gunbot is located."
+  echo "It is located at /data/gunthy_linux"
 fi
